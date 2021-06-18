@@ -23,9 +23,19 @@ Funciona con XHR o sea con ajax en todoas las solicitudes, menos la primera carg
 Es muy interesante la lectura de la página oficial, la cual sigo y voy documentando
  https://inertiajs.com/
 
-## Proceso deinstalación
+## Proceso de instalación
 
-[Creación del ecosistema o instalcion](./documentacion/instalacion.md)
+[Creación del ecosistema o instalación](./documentacion/instalacion.md)
+
+## Rutas usando inertia
+Usando inertia, estamos desarrollando una SPA pero con laravel, por lo que el routeo será el que hagamos habitualmente con laravel no usando rutas con vue.
+Por lo tanto las rutas las especificaremos en *****web.php*****
+Pero va a cambiar los métodos de la facade *****Route*****
+*Por ejemplo si queremos referenciar directamente a páginas lo expresaremos
+
+
+
+
 
 
 

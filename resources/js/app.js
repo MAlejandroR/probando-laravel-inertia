@@ -1,7 +1,9 @@
 import {createApp, h} from 'vue';
 import {createInertiaApp} from "@inertiajs/inertia-vue3/src";
+import AboutComponent from "componentes/AboutComponent";
 
 createInertiaApp({
+
     id:'app', //Es el valor por defecto, no haría falta ponerlo
     resolve: name => import(`./Pages/${name}`),
     setup({el, app, props, plugin}) {
