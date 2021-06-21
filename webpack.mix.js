@@ -1,8 +1,5 @@
 const mix = require('laravel-mix');
 
-output: {
-    chunkFilename: 'js/[name].js?id=[chunkhash]'
-}
 
 /*
  |--------------------------------------------------------------------------
@@ -16,6 +13,7 @@ output: {
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
+    .postCss('resources/css/app.css', 'public/css', [require('tailwindcss')
         //
-    ]);
+    ])
+    .vue({ runtimeOnly: true })

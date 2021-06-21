@@ -1,6 +1,6 @@
 import {createApp, h} from 'vue';
 import {createInertiaApp} from "@inertiajs/inertia-vue3/src";
-import AboutComponent from "componentes/AboutComponent";
+// import AboutComponent from "resources/js/Pages/AboutComponent";
 
 createInertiaApp({
 

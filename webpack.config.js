@@ -1,4 +1,4 @@
 output: {
-    chunkFilename: 'js/[name].js?id=[chunkhash]',
+    chunkFilename: 'js/[name].js?id=[chunkhash]'
 }
 
