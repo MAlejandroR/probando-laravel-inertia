@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::inertia('/about',"AboutComponent");
+Route::inertia('/about',"ej1")->name("ej1");

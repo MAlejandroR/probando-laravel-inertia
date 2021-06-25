@@ -33,8 +33,33 @@ __webpack_require__.r(__webpack_exports__);
 
 var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-3ea7f44e");
 
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-3ea7f44e");
+
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Esto es una página de about", -1
+/* HOISTED */
+);
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" a ej1");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("h1", null, "Esto es una página de about");
+  var _component_inertia_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("inertia-link");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: _ctx.route(_ctx.ej1)
+  }, {
+    "default": _withId(function () {
+      return [_hoisted_2];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["href"])], 64
+  /* STABLE_FRAGMENT */
+  );
 });
 
 /***/ }),

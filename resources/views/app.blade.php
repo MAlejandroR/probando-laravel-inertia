@@ -6,6 +6,8 @@
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet"/>
     <script src="{{ mix('/js/app.js') }}" defer></script>
     <title>Incidencias</title>
+    @routes
+
 </head>
 <body>
     @inertia

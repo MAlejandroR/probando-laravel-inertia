@@ -84,6 +84,7 @@ En el fichero app.js, modificamos el *****require***** por un *****import*****
 
 `````javascript
 output: {
+`````
   chunkFilename: 'js/[name].js?id=[chunkhash]',
 }
 `````

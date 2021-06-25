@@ -13769,8 +13769,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "../node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var _inertiajs_inertia_vue3_src__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3/src */ "./node_modules/@inertiajs/inertia-vue3/src/index.js");
 
+/*import route from 'ziggy';
+import { Ziggy } from 'ziggyRoutes'*/
+
  // import AboutComponent from "resources/js/Pages/AboutComponent";
 
+vue__WEBPACK_IMPORTED_MODULE_0__.createApp.prototype.$route = route;
 (0,_inertiajs_inertia_vue3_src__WEBPACK_IMPORTED_MODULE_1__.createInertiaApp)({
   id: 'app',
   //Es el valor por defecto, no haría falta ponerlo
@@ -18985,6 +18989,14 @@ var map = {
 	"./AboutComponent.vue": [
 		"./resources/js/Pages/AboutComponent.vue",
 		"resources_js_Pages_AboutComponent_vue"
+	],
+	"./ej1": [
+		"./resources/js/Pages/ej1.vue",
+		"resources_js_Pages_ej1_vue"
+	],
+	"./ej1.vue": [
+		"./resources/js/Pages/ej1.vue",
+		"resources_js_Pages_ej1_vue"
 	]
 };
 function webpackAsyncContext(req) {
@@ -19123,7 +19135,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "resources_js_Pages_AboutComponent_vue") return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_AboutComponent_vue":1,"resources_js_Pages_ej1_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
