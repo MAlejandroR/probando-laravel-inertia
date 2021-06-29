@@ -14,6 +14,17 @@ Para nombrar las rutas y poderlas referenciar en el lado del cliente, de las dif
 `````bash
 composer require tightenco/ziggy
 `````
+Una vez instalado, mi intención es tener rutas nominadas y poderlas invocar desde js como si lo estuviera haciendo en el back.
+
+##NO FUNCIONA 
+Creo un AboutComponent.vue y un paginaRef.vue
+La idea es tener en About una referenica a paginaRef
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 <template>
     <h1>Esto es una página de about</h1>
-    <inertia-link :href=route(ej1)> a ej1</inertia-link>
+    <inertia-link :href="route('ruta_ej1')"> a ej1</inertia-link>
 </template>
 
 <script>
