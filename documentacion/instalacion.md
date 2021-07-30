@@ -91,7 +91,7 @@ output: {
 `````
   chunkFilename: 'js/[name].js?id=[chunkhash]',
 }
-`````
+````` 
 
 *((MRM ????))Para ello creo un fichero de configuración webpack.config.js 
 
