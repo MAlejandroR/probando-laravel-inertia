@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-//    return view('welcome');
-    return ("hola");
-});
+Route::get('/', [App\Http\Controllers\ControllerPpal::class, "index"])
+->name("principal");
 
 Route::inertia('/about',"AboutComponent");
 Route::inertia('/ej1',"ej1")->name("ruta_ej1");

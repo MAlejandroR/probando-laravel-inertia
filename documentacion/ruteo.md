@@ -16,9 +16,23 @@ composer require tightenco/ziggy
 `````
 Una vez instalado, mi intención es tener rutas nominadas y poderlas invocar desde js como si lo estuviera haciendo en el back.
 
-##NO FUNCIONA 
-Creo un AboutComponent.vue y un paginaRef.vue
-La idea es tener en About una referenica a paginaRef
+Hay diferentes formas de hacer el funcionamiento de ziggy. A mí me ha costado un poco.
+Acciones:
+Incluir la directiva *****@route***** en el fichero *****app.blade.php***** antes de cargar el fichero *****app.js*****
+En el fichero *****app.js***** hacer pública la función *****route()***** para poderla utilizar, a través del método *****mixin*****, así como especificar el uso de la librería ziggy
+```javascript
+     createApp({render: () => h(app, props)})
+             .mixin({ methods: { route: window.route } })
+             .use(plugin,ZiggyVue, Ziggy)
+```
+A partir de ahora ya puedo usar la función de route(), parar referenciar a rutas creadas en el fichero *****web.php*****
+## Modelo vista-conterolador con inertia.
+Esto cambia con la forma de trabajar más tradicional de laravel. Como hemos comentado no hay páginas blade, solo ficheros vue que se renderizan
+
+
+
+
+
 
 
 
